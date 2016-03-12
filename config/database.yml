@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: akai
+  host: localhost
+  password:
+
+development:
+  <<: *default
+  database: vibe_writer_development
+
+test:
+  <<: *default
+  database: vibe_writer_test
+
+production:
+  <<: *default
+  database: vibe_writer_production
+  username: vibe_writer
+  password: <%= ENV['VIBE_WRITER_DATABASE_PASSWORD'] %>
