@@ -1,1 +1,2 @@
-<button name="chara"></button>
+<%= hidden_field_tag :hue_num, @hue_num %>
+<%= content_tag :button, @chara, style: "color: hsl(#{@hue_num}, 50%, 50%)"%>

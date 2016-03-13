@@ -18,42 +18,37 @@
   left: 0;
   top: 0;
   padding: 1em;
-}
 
-#congrats h1 {
-  animation: quake .1s linear 0s infinite alternate;
-  -webkit-animation: quake .1s linear 0s infinite alternate;
-}
-
-#congrats h1 {
-  text-shadow: 0 0 20px #000;
+  h1 {
+    text-shadow: 0 0 20px #000;
+    animation: quake .1s linear 0s infinite alternate;
+    -webkit-animation: quake .1s linear 0s infinite alternate;
+  }
 }
 
 #view {
   text-align: center;
 }
 
-p#word {
+#word {
   background: url('data:image/gif;base64,R0lGODlhAQAyAKECAFlZWbu7u////////yH5BAEKAAIALAAAAAABADIAAAIHlI+py30QCgA7');
   font-family: "Inconsolata", sans-serif;
   font-size: 46px;
   line-height: 50px;
   text-align: left;
   color: #111;
-}
-
-#word:after {
-  content: '|';
-  animation: cursor .5s linear infinite alternate;
-  -webkit-animation: cursor .5s linear infinite alternate;
-}
-
-#word .bs {
-  position: absolute;
-  right: 0;
-  bottom: 1em;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
+  &:after {
+    content: '|';
+    animation: cursor .5s linear infinite alternate;
+    -webkit-animation: cursor .5s linear infinite alternate;
+  }
+  .bs {
+    position: absolute;
+    right: 0;
+    bottom: 1em;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+  }
 }
 
 @keyframes cursor {

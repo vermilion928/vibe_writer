@@ -8,7 +8,8 @@ Bundler.require(*Rails.groups)
 
 module VibeWriter
   class Application < Rails::Application
-    config.i18n.default_locale = :ja
-    config.time_zone           = 'Tokyo'
+    config.i18n.default_locale                  = :ja
+    config.time_zone                            = 'Tokyo'
+    config.action_cable.allowed_request_origins = %r{https?:\/\/.*}
   end
 end
