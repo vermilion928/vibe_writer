@@ -1,0 +1,33 @@
+body {
+  background: url('wood.jpg');
+  font-family: "Noto Serif", serif;
+  position: relative;
+  text-align: center;
+  color: #555;
+  font-size: xx-large;
+  word-wrap: break-word;
+  overflow-y: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+em {
+  color: #000;
+  font-size: 150%;
+  text-shadow: 0 0 2px #000;
+
+  &:before, &:after {
+    content: '"';
+  }
+}
+
+small {
+  color: #f77;
+}

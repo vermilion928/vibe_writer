@@ -1,0 +1,96 @@
+#paper {
+  background: asset-url('paper.jpg') #fff;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 1em 10%;
+  padding: .5em;
+  box-shadow: 0 0 9px #000;
+  -webkit-box-shadow: 0 0 9px #000;
+}
+
+#congrats {
+  background: #fff;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 1em;
+}
+
+#congrats h1 {
+  animation: quake .1s linear 0s infinite alternate;
+  -webkit-animation: quake .1s linear 0s infinite alternate;
+}
+
+#congrats h1 {
+  text-shadow: 0 0 20px #000;
+}
+
+#view {
+  text-align: center;
+}
+
+p#word {
+  background: url('data:image/gif;base64,R0lGODlhAQAyAKECAFlZWbu7u////////yH5BAEKAAIALAAAAAABADIAAAIHlI+py30QCgA7');
+  font-family: "Inconsolata", sans-serif;
+  font-size: 46px;
+  line-height: 50px;
+  text-align: left;
+  color: #111;
+}
+
+#word:after {
+  content: '|';
+  animation: cursor .5s linear infinite alternate;
+  -webkit-animation: cursor .5s linear infinite alternate;
+}
+
+#word .bs {
+  position: absolute;
+  right: 0;
+  bottom: 1em;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+@keyframes cursor {
+  50%  {color: #fff;}
+  100% {color: #000;}
+}
+
+.text {
+  display:inline-block;
+  height:1em;
+  overflow:visible;
+  transform-origin: center bottom;
+  animation:text .5s;
+  -webkit-transform-origin: center bottom;
+  -webkit-animation:text .5s;
+}
+
+@keyframes text {
+  0%   {opacity: 0;transform: scale(15);}
+  100% {opacity: 1;transform: scale(1);}
+}
+
+.vibes {
+  font:bold 1em 'Inconsolata', sans-serif;
+  position: fixed;
+  white-space: nowrap;
+  text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: quake .1s linear 0s infinite alternate;
+  -webkit-animation: quake .1s linear 0s infinite alternate;
+}
+
+@keyframes quake {
+  0%   {margin: 2px 0  0 1px;}
+  25%  {margin: 1px 0 0 -2px;}
+  50%  {margin: -2px 0 0 1px;}
+  75%  {margin: -1px 0 0 2px;}
+  100% {margin: -1px 0 0 -2px;}
+}

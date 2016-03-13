@@ -1,0 +1,2 @@
+module StandbyScreensHelper
+end
