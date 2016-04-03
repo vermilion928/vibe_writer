@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
 
-  resources :client_screens, only: [:index]
+  resource :client_screen, only: [:show]
+  resource :standby_screen, only: [:show]
 
-  root 'standby_screens#index'
+  root 'standby_screens#show'
 end
