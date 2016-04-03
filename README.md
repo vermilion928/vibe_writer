@@ -1,24 +1,12 @@
-## README
+# VibeWriter
+## 即時性を持つ自由参加型コンテンツ
+WebSocket機能が追加されたRailsで動作するWebアプリケーション。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+その場に居合わせた人々が、即時的に一体感を生成することを目的とする。
 
-Things you may want to cover:
+聴衆は、スマートフォン等の携帯端末と、携帯端末上で動くWebブラウザを用い、
+URLにアクセスすることでインスタレーションに参加することができる。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 環境
+ - Ruby 2.3.0
+ - Ruby on Rails beta-5.0.3
