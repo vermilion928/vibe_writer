@@ -18,7 +18,6 @@
   left: 0;
   top: 0;
   padding: 1em;
-
   h1 {
     text-shadow: 0 0 20px #000;
     animation: quake .1s linear 0s infinite alternate;
@@ -32,7 +31,7 @@
 
 #word {
   background: url('data:image/gif;base64,R0lGODlhAQAyAKECAFlZWbu7u////////yH5BAEKAAIALAAAAAABADIAAAIHlI+py30QCgA7');
-  font-family: "Inconsolata", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   font-size: 46px;
   line-height: 50px;
   text-align: left;
@@ -72,7 +71,7 @@
 }
 
 .vibes {
-  font:bold 1em 'Inconsolata', sans-serif;
+  font: bold 1em "Source+Code+Pro", sans-serif;
   position: fixed;
   white-space: nowrap;
   text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000;

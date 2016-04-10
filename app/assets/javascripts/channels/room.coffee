@@ -13,5 +13,5 @@ App.room = App.cable.subscriptions.create "RoomChannel",
   key_type: (content) ->
     @perform 'key_type', content
 
-$(document).on 'click', 'button', (e) ->
+$(document).on 'click', 'a', (e) ->
   App.room.key_type { chara: e.target.innerText, hue_num: $('#hue_num').val() }

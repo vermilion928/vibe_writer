@@ -1,0 +1,6 @@
+<main id="client_screen">
+  <article>
+    <%= hidden_field_tag :hue_num, @hue_num %>
+    <%= content_tag :a, @chara, style: "color: hsl(#{@hue_num}, 40%, 70%)" %>
+  </article>
+</main>

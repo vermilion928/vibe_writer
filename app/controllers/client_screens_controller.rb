@@ -1,6 +1,6 @@
 class ClientScreensController < ApplicationController
-  def index
-    @chara   = [*'a'..'z'][rand 26]
+  def show
+    @chara   = [*'a'..'z'].sample
     @hue_num = rand 360
   end
 end
