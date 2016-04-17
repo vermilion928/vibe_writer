@@ -7,6 +7,7 @@ App.room = App.cable.subscriptions.create "RoomChannel",
     new Audio('sounds/type.ogg').play()
     color = data['color']
     chara = data['chara']
+    debugger
     $('#word').append('<span class="text" style="color: hsl(' + color + ', 50%, 50%);">' + chara + '</span>')
     $('#paper').animate({ scrollTop: $(document).height() }, 'fast')
 

@@ -18,9 +18,10 @@ ActiveRecord::Schema.define(version: 20160413150746) do
 
   create_table "papers", force: :cascade do |t|
     t.string   "goal_word"
-    t.text     "word",       default: ""
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.integer  "last_color", limit: 2, default: 0
+    t.text     "word",                 default: ""
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
 end
