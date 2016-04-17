@@ -1,6 +1,6 @@
 class ClientScreensController < ApplicationController
   def show
-    @chara   = [*'a'..'z'].sample
+    @chara   = Paper.last.goal_word.tap { |x| break x[rand(x.size)] }
     @hue_num = rand 360
   end
 end

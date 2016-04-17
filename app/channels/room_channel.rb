@@ -8,6 +8,6 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def key_type(data)
-    ActionCable.server.broadcast 'room_channel', chara: data['chara'].first, color: data['hue_num'].to_i
+    Paper.last.tap { |x| x.update! word: x.word + data['chara'].first }
   end
 end

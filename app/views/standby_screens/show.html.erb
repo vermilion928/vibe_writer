@@ -2,9 +2,9 @@
   <h1>This is VibeWriter</h1>
 
   <article id="paper">
-    <p id="word"></p>
-    <p class="goal">Please type <em></em></p>
-    <p><small>LEVEL <strong></strong></small></p>
+    <%= content_tag :p, @paper.word, id: 'word' %>
+    <p class="goal">Please type <%= content_tag :em, @paper.goal_word %></p>
+    <p><small>LEVEL <%= content_tag :strong, @paper.goal_word.size %></small></p>
   </article>
 
   <article id="congrats">
